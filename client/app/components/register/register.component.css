@@ -1,0 +1,59 @@
+.register-view-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register-card-container{
+    display: inline-block;
+    min-width: 310px;
+}
+
+.register-card-container md-radio-group{
+    text-align: right;
+}
+
+.register-view-container .errorMessage{
+    color: red;
+    font-size: 9px;
+    text-align: right;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.register .full-width-field{
+    width: 100%;
+}
+.register-card-container form{
+    display: flex;
+    flex-direction: column;
+}
+.register-card-container input{
+    min-width: 75%;
+}
+
+/*md-card > md-toolbar {
+  margin: -24px 0 24px -24px;
+  width: calc(100% + 48px);
+  min-height: 40px;
+}*/
+
+.register md-card-content{
+    flex-direction: column;
+}
+
+.register-view-container md-card-actions{
+    margin-top: 26px;
+}
+
+.layout-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: center;
+    direction: ltr;
+}

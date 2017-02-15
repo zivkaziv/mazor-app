@@ -1,0 +1,78 @@
+
+<!--Header-->
+<div id="main-container">
+	<md-toolbar id="main-toolbar">
+		<div layout="column" class="menu-button">
+			<button md-icon-button (click)="start.toggle()" [disabled]="!authService.isLoggedin()">
+				<md-icon style="color:#ffffff">menu</md-icon>
+			</button>
+		</div>
+		<span class="example-fill-remaining-space"></span>
+		<span style="color: #ffffff">M<span style="color: #99ccff">azor</span></span>
+	</md-toolbar>
+
+	<!--Sidenav manu-->
+	<md-sidenav-layout class="left-navigation" id='main-sidenav'>
+		<md-sidenav #start mode="side" align="end">
+			<expansion-panels-container>
+				<expansion-panel>
+					<expansion-panel-title>
+						מטרולוגיה
+					</expansion-panel-title>
+					<!--<expansion-panel-description-hidden>
+						Description when hidden
+					</expansion-panel-description-hidden>-->
+				
+					<!--<expansion-panel-description-toggled>
+						Description when toggled
+					</expansion-panel-description-toggled>-->
+				
+					<expansion-panel-content>
+						<md-list>
+							<md-list-item *ngFor="let chepter of meteorologyChapters">
+								<!--<md-icon>done</md-icon>														-->
+								<a md-line routerLink={{chepter.refLink}}>{{chepter.name}}</a>
+							</md-list-item>
+						</md-list>
+					</expansion-panel-content>
+				</expansion-panel>
+
+
+				<expansion-panel>
+					<expansion-panel-title>
+						טכני
+					</expansion-panel-title>
+					<expansion-panel-content>
+						<md-list>
+							<md-list-item *ngFor="let chepter of technicalChapters">
+								<!--<md-icon>done</md-icon>														-->
+								<a md-line routerLink={{chepter.refLink}}>{{chepter.name}}</a>
+							</md-list-item>
+						</md-list>
+					</expansion-panel-content>
+				</expansion-panel>
+
+
+
+				<expansion-panel>
+					<expansion-panel-title>
+						חוקה
+					</expansion-panel-title>
+					<expansion-panel-content>
+						<md-list>
+							<md-list-item *ngFor="let chepter of constitutionChapters">
+								<!--<md-icon>done</md-icon>														-->
+								<a md-line routerLink={{chepter.refLink}}>{{chepter.name}}</a>
+							</md-list-item>
+						</md-list>
+					</expansion-panel-content>
+				</expansion-panel>
+			</expansion-panels-container>
+		</md-sidenav>
+
+		<!--content-->
+		<div class="container">
+			<router-outlet></router-outlet>
+		</div>
+	</md-sidenav-layout>
+</div>
