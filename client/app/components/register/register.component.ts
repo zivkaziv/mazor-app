@@ -22,19 +22,18 @@ export class RegisterComponent {
     }
 
     registerForm = new FormGroup({
+        id: new FormControl('', [Validators.required]),
         firstName: new FormControl('', [Validators.required]),
+        middleName: new FormControl('', []),
         lastName: new FormControl('', [Validators.required]),
-        id: new FormControl('', [Validators.required, Validators.minLength(7)]),
-        company: new FormControl('', []),
         gender: new FormControl('male', [Validators.required]),
-        phoneNumber: new FormControl('', [Validators.required, Validators.minLength(9)]),
+        phoneNumber: new FormControl('', [Validators.required]),
         birthday: new FormControl('', [ Validators.required]),
         email: new FormControl('', [ Validators.required]),
         password: new FormControl('', [ Validators.required, Validators.minLength(6)])
     });
 
     register() {
-        // console.log(this.registerForm.value);
         this.authService.register(this.registerForm.value);
     }
 

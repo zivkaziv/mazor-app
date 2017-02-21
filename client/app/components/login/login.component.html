@@ -1,20 +1,22 @@
 
-<div class="layout-container" dir="rtl" >
+<!--<div class="layout-container" dir="rtl" >-->
+<div class="layout-container">
     <div class="login-card-container">
-        <md-toolbar color="primary">ברוכים הבאים!</md-toolbar>
+        <md-toolbar color="primary">Welcome</md-toolbar>
         <md-card class="login-card">
             <md-card-content>
                 <md-input-container class="full-width-field">
-                    <input md-input type="email" placeholder="דואר אלקטרוני" [(ngModel)]="user.email" align="start" >
+                    <input md-input type="email" placeholder="Email" [(ngModel)]="user.email" align="end" >
                 </md-input-container>
                 <md-input-container class="full-width-field">    
-                    <input md-input placeholder="סיסמה" [(ngModel)]="user.password" type="password" align="start">
+                    <input md-input placeholder="password" [(ngModel)]="user.password" type="password" align="end">
                 </md-input-container>    
             </md-card-content>
 
             <md-card-actions layout="row" layout-align="center center">
-                <button md-raised-button (click)="login()" color="primary">כניסה</button>
-                <a md-button routerLink='/register'>הרשמה</a>
+                <button class="full-width-field" md-raised-button (click)="login()" color="primary">Login</button>
+                <div class="ten-px-spacer"></div>
+                <a class="full-width-field" md-button routerLink='/register'>Not member yet</a>
             </md-card-actions>
         </md-card>
     </div>

@@ -1,46 +1,47 @@
 <div class="register-view-container">
-    <div class="register-card-container" dir="rtl">
-        <md-toolbar color="primary">הרשמה</md-toolbar>
+    <!--<div class="register-card-container" dir="rtl">-->
+    <div class="register-card-container">
+        <md-toolbar color="primary">Register</md-toolbar>
         <md-card class="demo-card demo-basic">
             <md-card-content>
                 <form [formGroup]="registerForm">
-                    <md-input placeholder="תעודת זהות" formControlName="id"></md-input>
+                    <md-input placeholder="ID" formControlName="id"></md-input>
                     <div class="errorMessage">
                         <span [hidden]="registerForm.controls['id'].valid || registerForm.controls['id'].pristine" >שדה זה הינו חובה על מנת להירשם</span>
                     </div>
-                    <md-input placeholder="שם פרטי" formControlName="firstName"></md-input>
+                    <md-input placeholder="Given Name" formControlName="firstName"></md-input>
                     <div class="errorMessage">
                         <span [hidden]="registerForm.controls['firstName'].valid || registerForm.controls['firstName'].pristine" >שדה זה הינו חובה על מנת להירשם</span>
                     </div>
-                    <md-input placeholder="שם משפחה" formControlName="lastName"></md-input>
+                    <!--<md-input placeholder="Middle Name" formControlName="middleName"></md-input>-->
+                    <md-input placeholder="Surname" formControlName="lastName"></md-input>
                     <div class="errorMessage">
                         <span [hidden]="registerForm.controls['lastName'].valid || registerForm.controls['lastName'].pristine" >שדה זה הינו חובה על מנת להירשם</span>
                     </div>
-                    <md-input placeholder="חברה" formControlName="company"></md-input>
                     <md-radio-group formControlName="gender">
-                        <md-radio-button value="male">זכר</md-radio-button>
-                        <md-radio-button value="female">נקבה</md-radio-button>
+                        <md-radio-button value="male">Mr.</md-radio-button>
+                        <md-radio-button value="female">Mrs.</md-radio-button>
                     </md-radio-group>
-                    <md-input placeholder="טלפון" formControlName="phoneNumber"></md-input>
+                    <md-input placeholder="Phone number" formControlName="phoneNumber"></md-input>
                     <div class="errorMessage">
                         <span [hidden]="registerForm.controls['phoneNumber'].valid || registerForm.controls['phoneNumber'].pristine" >מספר הטלפון אינו חוקי</span>
                     </div>
-                    <md-input type="date" placeholder="תאריך לידה" formControlName="birthday"></md-input>
+                    <md-input type="date" placeholder="DOB" formControlName="birthday"></md-input>
                     <div class="errorMessage">
                         <span [hidden]="registerForm.controls['birthday'].valid || registerForm.controls['birthday'].pristine" >שדה זה הינו חובה על מנת להירשם</span>
                     </div>
-                    <md-input type="email" placeholder="דואר אלקטרוני" formControlName="email"></md-input>
+                    <md-input type="email" placeholder="Email" formControlName="email"></md-input>
                     <div class="errorMessage">
                         <span [hidden]="registerForm.controls['email'].valid || registerForm.controls['email'].pristine" >כתובת המייל אינה חוקית</span>
                     </div>
-                    <md-input type="password" placeholder="סיסמה" formControlName="password"></md-input>
+                    <md-input type="password" placeholder="Password" formControlName="password"></md-input>
                     <div class="errorMessage">
                         <span [hidden]="registerForm.controls['password'].valid || registerForm.controls['password'].pristine" >הסיסמה צריכה להיות לפחות 6 אותיות ומספרים</span>
                     </div>
 
                     <md-card-actions layout="row" layout-align="center center">
-                        <button md-raised-button (click)="register()" color="primary">לתשלום</button>
-                        <button md-button (click)="cancel()" color="primary">חזור</button>
+                        <button md-raised-button (click)="register()" color="primary">Register</button>
+                        <button md-button (click)="cancel()" color="primary">Back</button>
                     </md-card-actions>
                 </form>
             </md-card-content>

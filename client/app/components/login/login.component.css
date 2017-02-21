@@ -1,6 +1,12 @@
 .login-card-container{
     /*width: 70%;*/
-    direction: rtl;
+    /*direction: rtl;*/
+}
+
+.login-card-container md-toolbar{
+    /*width: 70%;*/
+    /*direction: rtl;*/
+    justify-content: center;
 }
 
 .login-card .full-width-field{
@@ -15,7 +21,7 @@
 
 .login-card md-card-actions{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     padding: 16px;
 }
 
@@ -31,5 +37,11 @@
     margin-right: 5%;    
     align-items: center;
     justify-content: center;
-    direction: ltr;
+    /*direction: ltr;*/
+}
+
+
+.ten-px-spacer{
+    height: 10px;
+    width: 10px;
 }
