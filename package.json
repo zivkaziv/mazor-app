@@ -47,6 +47,8 @@
     "reflect-metadata": "^0.1.8",
     "rxjs": "5.0.2",
     "systemjs": "0.19.41",
+    "zone.js": "^0.7.2",
+
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-nodemon": "^2.2.1",
@@ -54,9 +56,6 @@
     "gulp-tslint": "^6.1.2",
     "gulp-typescript": "^3.0.1",
     "gulp-typings": "^2.0.4",
-    "zone.js": "^0.7.2"
-  },
-  "devDependencies": {
     "concurrently": "^3.0.0",
     "del": "^2.2.2",
     "method-override": "^2.3.6",
@@ -65,8 +64,12 @@
     "tslint": "^3.15.1",
     "typescript": "^2.0.3"
   },
-  "bugs": {
-    "url": "https://github.com/zivkaziv/UAV-Theory-IL/issues"
+  "devDependencies": {
+
   },
-  "homepage": "https://github.com/zivkaziv/UAV-Theory-IL#readme"
+
+  "bugs": {
+    "url": "https://github.com/zivkaziv/mazor-app/issues"
+  },
+  "homepage": "https://github.com/zivkaziv/mazor-app#readme"
 }
