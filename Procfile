@@ -1,1 +1,1 @@
-web: dbURI='mongodb://heroku_m0lx6hdn:fvgobag8dr6s26inttkvjqmlmq@ds155509.mlab.com:55509/heroku_m0lx6hdn/mazorapp' NODE_ENV='production' npm install node ./dist/server/bin/www
+web: dbURI='mongodb://heroku_m0lx6hdn:fvgobag8dr6s26inttkvjqmlmq@ds155509.mlab.com:55509/heroku_m0lx6hdn/mazorapp' NODE_ENV='production' node ./dist/server/bin/www

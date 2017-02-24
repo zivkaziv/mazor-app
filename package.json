@@ -1,5 +1,5 @@
 {
-  "name": "uav-therory-il",
+  "name": "mazor-app",
   "version": "1.0.0",
   "description": "Angular2, Mongo, Gulp, Typescript and Express",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zivkaziv/UAV-Theory-IL.git"
+    "url": "git+https://github.com/zivkaziv/mazor-app.git"
   },
   "keywords": [
     "Angular2",
