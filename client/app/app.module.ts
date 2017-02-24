@@ -1,4 +1,4 @@
-import { NgModule }      from '@angular/core';
+import {NgModule, CUSTOM_ELEMENTS_SCHEMA}      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule, ReactiveFormsModule}    from '@angular/forms';
 import { HttpModule }     from '@angular/http';
@@ -23,7 +23,6 @@ import { AuthGuard } from './common/auth.guard';
 import {RegisterComponent} from "./components/register/register.component";
 import {LessonSlidesComponent} from "./components/lessonslides/lessonslides.component";
 import {LoadedDirective} from "./directives/loaded/loaded.directive";
-// import {SlidesModule} from "ng2-slides";
 
 @NgModule({
   imports: [
@@ -33,8 +32,7 @@ import {LoadedDirective} from "./directives/loaded/loaded.directive";
     ReactiveFormsModule,
     routing,
     MaterialModule.forRoot(),
-    ExpansionPanelsModule,
-    // SlidesModule
+    ExpansionPanelsModule
     ],
   declarations: [
     AppComponent,
