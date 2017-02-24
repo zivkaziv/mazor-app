@@ -23,6 +23,7 @@ import { AuthGuard } from './common/auth.guard';
 import {RegisterComponent} from "./components/register/register.component";
 import {LessonSlidesComponent} from "./components/lessonslides/lessonslides.component";
 import {LoadedDirective} from "./directives/loaded/loaded.directive";
+import {PregnantRightsComponent} from "./components/pregnantrights/pregnantrights.component";
 
 @NgModule({
   imports: [
@@ -31,7 +32,7 @@ import {LoadedDirective} from "./directives/loaded/loaded.directive";
     FormsModule,
     ReactiveFormsModule,
     routing,
-    MaterialModule.forRoot(),
+    MaterialModule,
     ExpansionPanelsModule
     ],
   declarations: [
@@ -43,6 +44,7 @@ import {LoadedDirective} from "./directives/loaded/loaded.directive";
     LoginComponent,
     RegisterComponent,
     LessonSlidesComponent,
+    PregnantRightsComponent,
     LoadedDirective
   ],
   providers: [

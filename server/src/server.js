@@ -1,5 +1,6 @@
 /// <reference path="../typings/index.d.ts" />
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var express = require("express");
 var BaseRoutes = require("./config/routes/Routes");
 var bodyParser = require("body-parser");

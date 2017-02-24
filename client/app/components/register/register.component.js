@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Created by ziv on 28/01/2017.
  */
@@ -21,12 +22,12 @@ var RegisterComponent = (function () {
         this.router = router;
         this.authService = authService;
         this.registerForm = new forms_1.FormGroup({
+            id: new forms_1.FormControl('', [forms_1.Validators.required]),
             firstName: new forms_1.FormControl('', [forms_1.Validators.required]),
+            middleName: new forms_1.FormControl('', []),
             lastName: new forms_1.FormControl('', [forms_1.Validators.required]),
-            id: new forms_1.FormControl('', [forms_1.Validators.required, forms_1.Validators.minLength(7)]),
-            company: new forms_1.FormControl('', []),
             gender: new forms_1.FormControl('male', [forms_1.Validators.required]),
-            phoneNumber: new forms_1.FormControl('', [forms_1.Validators.required, forms_1.Validators.minLength(9)]),
+            phoneNumber: new forms_1.FormControl('', [forms_1.Validators.required]),
             birthday: new forms_1.FormControl('', [forms_1.Validators.required]),
             email: new forms_1.FormControl('', [forms_1.Validators.required]),
             password: new forms_1.FormControl('', [forms_1.Validators.required, forms_1.Validators.minLength(6)])
@@ -34,7 +35,6 @@ var RegisterComponent = (function () {
         this.user = new user_model_1.User();
     }
     RegisterComponent.prototype.register = function () {
-        // console.log(this.registerForm.value);
         this.authService.register(this.registerForm.value);
     };
     RegisterComponent.prototype.cancel = function () {

@@ -1,0 +1,28 @@
+#pregnant-rights{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pregnant-rights .user-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#pregnant-rights .user-section .user-detail-slider{
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#pregnant-rights .user-section .user-detail-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

@@ -1,0 +1,58 @@
+<div id="pregnant-rights">
+    <h2>Know your rights</h2>
+    <div class="user-section">
+        <div class="age-section user-detail-section">
+            <div class="section-title">Age</div>
+            <md-slider
+                    class="user-detail-slider"
+                    [max]="maxAge"
+                    [min]="minAge"
+                    [step]="stepAge"
+                    [thumb-label]="thumbLabel"
+                    [tick-interval]="tickInterval"
+                    [value]="age"
+                    (input)="onAgeChange($event)">
+            </md-slider>
+            <div class="section-result">{{age}}</div>
+        </div>
+        <div class="weight-section user-detail-section">
+            <div class="section-title">Weight</div>
+            <div class="row">
+                <md-slider
+                        class="user-detail-slider"
+                        [max]="maxWeight"
+                        [min]="minWeight"
+                        [step]="stepWeight"
+                        [thumb-label]="thumbLabel"
+                        [tick-interval]="tickInterval"
+                        [value]="weight"
+                        (input)="onWeightChange($event)">
+                </md-slider>
+                <!--<select [(ngModel)]="measureType" name="measureType">-->
+                    <!--<option [value]="pounds">Pound</option>-->
+                    <!--<option [value]="kg">kg</option>-->
+                <!--</select>-->
+            </div>
+            <div class="section-result">{{weight}} {{measureType}}</div>
+        </div>
+        <div class="race-section user-detail-section">
+            <div class="section-title">Race</div>
+            <md-select class="user-detail-slider" [(ngModel)]="race" name="race">
+                <md-option [value]="normal">Normal</md-option>
+                <md-option [value]="jew">Jew</md-option>
+                <md-option [value]="african">African</md-option>
+                <md-option [value]="nigro">Nigro</md-option>
+            </md-select>
+        </div>
+        <div class="insurance-section user-detail-section">
+            <div class="section-title">Insurance company</div>
+            <md-select class="user-detail-slider" [(ngModel)]="company" name="company">
+                <md-option [value]="blue">Blue shild</md-option>
+                <md-option [value]="red">Red shild</md-option>
+                <md-option [value]="black">Black shild</md-option>
+                <md-option [value]="white">White shild</md-option>
+            </md-select>
+        </div>
+
+    </div>
+</div>

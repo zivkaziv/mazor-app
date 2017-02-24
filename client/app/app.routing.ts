@@ -8,47 +8,18 @@ import { AuthGuard } from './common/auth.guard';
 import { LoginComponent } from './components/login/login.component';
 import {RegisterComponent} from "./components/register/register.component";
 import {LessonSlidesComponent} from "./components/lessonslides/lessonslides.component";
+import {PregnantRightsComponent} from "./components/pregnantrights/pregnantrights.component";
 
 
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: '/dashboard',
-    pathMatch: 'full',
-    canActivate: [AuthGuard]
+    redirectTo: '/home',
+    pathMatch: 'full'
   },
   {
-    path: 'dashboard',
-    component: DashboardStudentComponent,
-    canActivate: [AuthGuard]
-  },
-  {
-    path: 'detail/:id',
-    component: HeroDetailComponent,
-    canActivate: [AuthGuard]
-  },
-  {
-    path: 'heroes',
-    component: HeroesComponent,
-    canActivate: [AuthGuard]
-  },
-  {
-    path: 'dashboard-studens',
-    component: DashboardComponent,
-    canActivate: [AuthGuard]
-  },
-  {
-    path: 'lessons/:topic/:chapter',
-    component: LessonSlidesComponent,
-    canActivate: [AuthGuard]
-  },
-  {
-    path: 'login',
-    component: LoginComponent
-  },
-  {
-    path: 'register',
-    component: RegisterComponent
+    path: 'home',
+    component: PregnantRightsComponent
   }
 ];
 
