@@ -12,8 +12,8 @@
 	</md-toolbar>
 
 	<!--Sidenav manu-->
-	<md-sidenav-layout class="left-navigation" id='main-sidenav'>
-		<md-sidenav #start mode="side" align="end">
+	<md-sidenav-container class="left-navigation" id='main-sidenav'>
+		<md-sidenav #start mode="side" align="start">
 			<expansion-panels-container>
 				<expansion-panel>
 					<expansion-panel-title>
@@ -74,5 +74,5 @@
 		<div class="container">
 			<router-outlet></router-outlet>
 		</div>
-	</md-sidenav-layout>
+	</md-sidenav-container>
 </div>

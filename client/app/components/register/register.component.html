@@ -5,16 +5,16 @@
         <md-card class="demo-card demo-basic">
             <md-card-content>
                 <form [formGroup]="registerForm">
-                    <md-input placeholder="ID" formControlName="id"></md-input>
+                    <input mdInput placeholder="ID" formControlName="id"/>
                     <div class="errorMessage">
                         <span [hidden]="registerForm.controls['id'].valid || registerForm.controls['id'].pristine" >שדה זה הינו חובה על מנת להירשם</span>
                     </div>
-                    <md-input placeholder="Given Name" formControlName="firstName"></md-input>
+                    <input mdInput placeholder="Given Name" formControlName="firstName"/>
                     <div class="errorMessage">
                         <span [hidden]="registerForm.controls['firstName'].valid || registerForm.controls['firstName'].pristine" >שדה זה הינו חובה על מנת להירשם</span>
                     </div>
-                    <!--<md-input placeholder="Middle Name" formControlName="middleName"></md-input>-->
-                    <md-input placeholder="Surname" formControlName="lastName"></md-input>
+                    <!--<input mdInput placeholder="Middle Name" formControlName="middleName"></md-input>-->
+                    <input mdInput placeholder="Surname" formControlName="lastName"/>
                     <div class="errorMessage">
                         <span [hidden]="registerForm.controls['lastName'].valid || registerForm.controls['lastName'].pristine" >שדה זה הינו חובה על מנת להירשם</span>
                     </div>
@@ -22,19 +22,19 @@
                         <md-radio-button value="male">Mr.</md-radio-button>
                         <md-radio-button value="female">Mrs.</md-radio-button>
                     </md-radio-group>
-                    <md-input placeholder="Phone number" formControlName="phoneNumber"></md-input>
+                    <input mdInput placeholder="Phone number" formControlName="phoneNumber"/>
                     <div class="errorMessage">
                         <span [hidden]="registerForm.controls['phoneNumber'].valid || registerForm.controls['phoneNumber'].pristine" >מספר הטלפון אינו חוקי</span>
                     </div>
-                    <md-input type="date" placeholder="DOB" formControlName="birthday"></md-input>
+                    <input mdInput type="date" placeholder="DOB" formControlName="birthday"/>
                     <div class="errorMessage">
                         <span [hidden]="registerForm.controls['birthday'].valid || registerForm.controls['birthday'].pristine" >שדה זה הינו חובה על מנת להירשם</span>
                     </div>
-                    <md-input type="email" placeholder="Email" formControlName="email"></md-input>
+                    <input mdInput type="email" placeholder="Email" formControlName="email"/>
                     <div class="errorMessage">
                         <span [hidden]="registerForm.controls['email'].valid || registerForm.controls['email'].pristine" >כתובת המייל אינה חוקית</span>
                     </div>
-                    <md-input type="password" placeholder="Password" formControlName="password"></md-input>
+                    <input mdInput type="password" placeholder="Password" formControlName="password"/>
                     <div class="errorMessage">
                         <span [hidden]="registerForm.controls['password'].valid || registerForm.controls['password'].pristine" >הסיסמה צריכה להיות לפחות 6 אותיות ומספרים</span>
                     </div>
