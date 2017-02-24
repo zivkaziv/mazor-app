@@ -8,6 +8,13 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+#pregnant-rights .user-section .section-title{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #pregnant-rights .user-section .user-detail-slider{
